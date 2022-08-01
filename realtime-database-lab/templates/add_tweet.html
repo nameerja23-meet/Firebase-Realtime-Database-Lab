@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    Great Job!
+    <a href="{{url_for('signout')}}"><button>SIGN OUT</button></a>
+    <form method="POST" action='/add_tweet'>
+	    <div>
+	            <label>Title</label>
+	            <div>
+	                <input type="text"  name="title">
+	            </div>
+	        </div>
+
+	    <div>
+	            <label>Text</label>
+	            <div>
+	                <input type="text" maxlength="280" name="description">
+	            </div>
+	    </div>
+
+	    <div>
+            <input type="submit"/>
+        </div>
+	</form>     
+	<a href="{{url_for('all_tweets')}}"><button>All Tweets</button></a>
+</body>
+</html>

@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	{%for x in tweets%}
+	<h1>{{x['title']}}</h1>
+	{{x['text']}}
+	{%endfor%}
+</body>
+</html>
